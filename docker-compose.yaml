@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  fligoserver:
+    container_name: fligoserver
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command:
+      - sh
+      - -c
+      - 'npm start'
+    ports:
+      - 5000:8060
+    restart: always

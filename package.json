@@ -19,6 +19,7 @@
     "firebase-tools": "^11.28.0",
     "node-cache": "^5.1.2",
     "nodemon": "^2.0.22",
-    "twilio": "^4.10.0"
+    "twilio": "^4.10.0",
+    "cors": "^2.8.5"
   }
 }
