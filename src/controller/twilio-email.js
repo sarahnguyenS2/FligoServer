@@ -21,8 +21,7 @@ const sendOtpEmail = async (req, res, next) => {
       });
     res
       .status(200)
-      .send(`OTP send successfully!: ${JSON.stringify(otpResponse)}`);
-    console.log(otpResponse);
+      .send(otpResponse);
   } catch (error) {
     res
       .status(error?.status || 400)
@@ -41,7 +40,7 @@ const verifyOtpEmail = async (req, res, next) => {
       });
     res
       .status(200)
-      .send(`OTP verified successfully!: ${JSON.stringify(verifiedResponse)}`);
+      .send(verifiedResponse);
   } catch (error) {
     res
       .status(error?.status || 400)
